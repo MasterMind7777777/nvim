@@ -35,3 +35,5 @@ vim.keymap.set('n', '<Leader>bl', ':lua require("formatters.key_format").check_f
 vim.keymap.set('n', '<Leader>na', ':NoteActive<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', '<Leader>nn', ':NoteNotActive<CR>', { noremap = true, silent = true })
 
+-- open diagnostic buffer.
+vim.api.nvim_set_keymap('n', '<leader>od', ':Diagnostics<CR>', { noremap = true, silent = true })

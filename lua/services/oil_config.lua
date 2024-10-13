@@ -1,3 +1,10 @@
+require'nvim-web-devicons'.setup {
+  default = true; -- globally enable default icons (default to false)
+  color_icons = true; -- globally enable colored icons (default to true)
+  default_symbol = ''; -- default symbol used if not specified (default to '?')
+}
+
+
 require("oil").setup({
   -- ... (other configurations)
   view_options = {
